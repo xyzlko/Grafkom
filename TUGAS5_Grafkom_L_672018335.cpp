@@ -1521,46 +1521,59 @@ void keyboard(unsigned char key, int x, int y)
 {
     switch(key)
     {
+        //zoom in
         case'w':
         case'W':
             glTranslatef(0.0, 0.0, 3.0);
             break;
+        //geser kanan
         case'd':
         case'D':
             glTranslatef(-3.0, 0.0, 0.0);
             break;
+        //zoom out
         case's':
         case'S':
             glTranslatef(0.0, 0.0, -3.0);
             break;
+        //geser kiri
         case'a':
         case'A':
             glTranslatef(3.0, 0.0, 0.0);
             break;
+        //objek naik
         case'7':
             glTranslatef(0.0, 3.0, 0.0);
             break;
+        //objek turun
         case'9':
             glTranslatef(0.0, -3.0, 0.0);
             break;
+        //putar bawah
         case'2':
             glRotatef(2.0, 1.0, 0.0, 0.0);
             break;
+        //putar atas
         case'8':
             glRotatef(-2.0, 1.0, 0.0, 0.0);
             break;
+        //putar samping kiri
         case'6':
             glRotatef(2.0, 0.0, 1.0, 0.0);
             break;
+        //putar samping kanan
         case'4':
             glRotatef(-2.0, 0.0, 1.0, 0.0);
             break;
+        //putar arah berbalikan jarum jam
         case'1':
             glRotatef(2.0, 0.0, 0.0, 1.0);
             break;
+        //putar arah jarum jam
         case'3':
             glRotatef(-2.0, 0.0, 0.0, 1.0);
             break;
+        //lihat dalam
         case'5':
             if(is_depth)
             {
